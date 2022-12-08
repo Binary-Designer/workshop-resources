@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+
+\title{Microcontroller Basics in C/C++}
+\author{UQMARS}
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagebreak
+\section*{Microcontroller options}
+ATmega328P - Can be used for courses such as ENGG1100\\ (I think it was banned for METR2800 and METR4810?? just the 328P though)
+STM32 - Used in CSSE3010, ENGG2800\\
+???? (Any others you can think of??)
+\section*{How to start programing Microcontroller overview of Arduino IDE}
+Pretty basic I think we can just provide some sort of resource they can look at in their own time
+\section*{How to program Microcontroller with C}
+\subsection*{Header files}
+Microcontroller dependent headerfiles, need to emphasise importance of reading documentation properly
+as each microcontroller can have small variations.
+\subsection*{Makefile}
+Having a makefile is crucial allowing us to use a cross-compiler to compile code onto chip.
+Documentation may provide a template makefile
+\subsection*{Simple Blink LED}
+Equivalent of Hello World! in the embedded world. Teaches how to output to certain PINS.
+\subsection*{Button Input to turn on LED}
+Teaches students how to handle input.
+\subsection*{Interrupt}
+Teaches students not to use busy waits as it can chew up a lot of processor cycles for no reason.
+\subsection*{PWM}
+PWM for things such as motors and SG90 servos
+\end{document}
