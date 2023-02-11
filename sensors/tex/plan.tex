@@ -78,7 +78,7 @@ The required software for these tutorials is Arduino IDE. To download the softwa
             \includegraphics[width = \imageWidth]{Assets/Downloads_page.png}
         \end{center}
         
-        \item Next, open the IDE and head to \textbf{File $>$ Preferences}, and enter the following URL into the 'Additional boards manager URLs':
+        \item Next, open the IDE and head to \textbf{File → Preferences}, and enter the following URL into the 'Additional boards manager URLs':
         \textbf{https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package\_esp32\_index.json}
         
         \begin{center}
@@ -86,13 +86,13 @@ The required software for these tutorials is Arduino IDE. To download the softwa
         \end{center}
         
         \newpage
-        \item Go back to the IDE and head to \textbf{Tools $>$ Board $>$ Boards Manager}. In the old IDE, a new pop-up should appear, and in IDE 2, the toolbox should appear on the left hands side as shown below:
+        \item Go back to the IDE and head to \textbf{Tools → Board → Boards Manager}. In the old IDE, a new pop-up should appear, and in IDE 2, the toolbox should appear on the left hands side as shown below:
         
         \begin{center}
             \includegraphics[width = \imageWidth]{Assets/Boards_manager.png}
         \end{center}
     
-        \item To upload code to a board, plug it into the computer and make sure the board is chosen and the port specified (\textbf{Tools $>$ Port $>$ 'Select correct port'}). 
+        \item To upload code to a board, plug it into the computer and make sure the board is chosen and the port specified (\textbf{Tools → Port → 'Select correct port'}). 
         Then, hit the right-facing arrow to upload. Remember to hold down the boot button on the ESP32 while uploading.
         \begin{center}
             \includegraphics[width = \imageWidth]{Assets/Upload.png}
@@ -168,10 +168,10 @@ The required software for these tutorials is Arduino IDE. To download the softwa
                 \multicolumn{1}{|c|}{\textbf{ESP32}} \\
                 \hline
                 \begin{enumerate}
-                    \item Plug the led with positive terminal port 13, and negative terminal in ground
+                    \item Plug the led with positive terminal in port 13, and negative terminal in ground
                 \end{enumerate} &
                 \begin{enumerate}
-                    \item Plug the led with positive terminal port G23, and negative terminal in ground
+                    \item Plug the led with positive terminal in port G23, and negative terminal in ground
                 \end{enumerate} \\
                 \hline
             \end{tabularx}
@@ -387,7 +387,7 @@ The required software for these tutorials is Arduino IDE. To download the softwa
             \end{center}
             \includegraphics[height = 6mm]{Assets/ultrasonic_init.png} \\
             This line creates an ultrasonic object. Type in the ports of the ultrasonic as indicated by Trig and Echo. \\
-            \includegraphics[height = \codeHeight]{Assets/ultrasonic_read.png} \\
+            \includegraphics[height = 6mm]{Assets/ultrasonic_read.png} \\
             This returns the value currently being read by the sensor.
         \end{mdframed}
     \newpage
