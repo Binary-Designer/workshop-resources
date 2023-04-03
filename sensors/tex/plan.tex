@@ -69,6 +69,33 @@ node [inner sep=0,outer sep=0,above right]
 \end{titlepage}
 \restoregeometry
 
+\newpage
+\section*{Thank you to our partners!}
+\begin{figure}[!htbp]
+    \centering
+    \caption*{Turbo Sponsors}%
+    \subfloat{{\includegraphics[width=7.5cm]{Assets/BPEQ-Logo-Web.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width=7.5cm]{Assets/black_corematic_logo_inline_expertises.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width=7.5cm]{Assets/JAY-0002-Brand-Identity-Evolution-Logo_Full-Colour-RGB.png} }}%
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \caption*{Gold Sponsors}%
+    \subfloat{{\includegraphics[width=5.5cm]{Assets/ACS-RCL_Logo-Colour.png} }}%
+    \qquad
+    \subfloat{{\includegraphics[width=5.5cm]{Assets/chelona.png} }}%
+\end{figure}
+
+\begin{figure}[!htbp]
+    \centering
+    \caption*{Silver Sponsors}%
+    \subfloat{{\includegraphics[width=3cm]{Assets/EA_logo_Flat_CMYK.png} }}%
+\end{figure}
+
+\newpage
 \section*{Required Software}
 The required software for these tutorials is Arduino IDE. To download the software, go through the following steps:
     \begin{enumerate}
@@ -79,14 +106,14 @@ The required software for these tutorials is Arduino IDE. To download the softwa
         \end{center}
         
         \item Next, open the IDE and head to \textbf{File → Preferences}, and enter the following URL into the 'Additional boards manager URLs':
-        \textbf{https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package\_esp32\_index.json}
+        \textbf{https://dl.espressif.com/dl/package\_esp32\_index.json} and hit OK.
         
         \begin{center}
             \includegraphics[width = \imageWidth]{Assets/Esp_url.png}
         \end{center}
         
         \newpage
-        \item Go back to the IDE and head to \textbf{Tools → Board → Boards Manager}. In the old IDE, a new pop-up should appear, and in IDE 2, the toolbox should appear on the left hands side as shown below:
+        \item Go back to the IDE and head to \textbf{Tools → Board → Boards Manager}. In the old IDE, a new pop-up should appear, and in IDE 2, the toolbox should appear on the left hand side as shown below:
         
         \begin{center}
             \includegraphics[width = \imageWidth]{Assets/Boards_manager.png}
@@ -103,7 +130,21 @@ The required software for these tutorials is Arduino IDE. To download the softwa
         \end{center}
     \end{enumerate}
 
-
+\newpage
+\section*{Additional Considerations for the ESP32}
+    There is some additional information to be aware of when using an ESP32 with the Arduino IDE.
+    \begin{enumerate}
+        \item In most cases, on Windows computers, the ESP32 port is not automatically detected on the Arduino IDE. To determine which port the ESP32 is connected to, head to the Windows search bar and enter 'Device Manager'. In the device manager, click
+        \newline
+        'Ports (COM \& LPT)'. Under this dropdown, search for your ESP32 board COM port.
+        \begin{center}
+            \includegraphics[width = \imageWidth]{Assets/device_manager.png}
+        \end{center}
+        \item If using a Windows 11 computer, an additional driver must be installed. Download our 'ESP\_DRIVER', and unzip the folder. Inside, right click on 'silabser.inf' and click 'install'.
+        \begin{center}
+            \includegraphics[width = \imageWidth]{Assets/esp_driver.png}
+        \end{center}
+    \end{enumerate}
 \newpage
 \section*{Overview of the Arduino and ESP32}
     \begin{center}
@@ -394,60 +435,18 @@ The required software for these tutorials is Arduino IDE. To download the softwa
     \includegraphics[width = \diagramWidth]{Assets/ultrasonic_code.png} \\
     \includegraphics[width = \diagramWidth]{Assets/ultrasonic_monitor.png} \\
     Upload the code to the Arduino/ESP32 and open the Serial Monitor. The ultrasonic should be reading values as seen in the above Serial Monitor.
-    
 \newpage
-\section*{References}
-
-
-%Change includegraphics logos and corresponding sponsor captions for our current sponsors
-%Remove any extra figures if more than required
-
-\begin{figure}[!htb]
-    \captionsetup[subfigure]{labelformat=empty}
-     \centering
-        \begin{subfigure}[b]{0.3\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 1}
-        \end{subfigure}
-     \hfill
-        \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 2}
-        \end{subfigure}
-\end{figure}
-
-\begin{figure}[!htb]
-    \captionsetup[subfigure]{labelformat=empty}
-     \centering
-        \begin{subfigure}[b]{0.3\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 1}
-        \end{subfigure}
-     \hfill
-        \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 2}
-        \end{subfigure}
-\end{figure}
-
-\begin{figure}[!htb]
-    \captionsetup[subfigure]{labelformat=empty}
-     \centering
-        \begin{subfigure}[b]{0.3\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 1}
-        \end{subfigure}
-     \hfill
-        \begin{subfigure}[b]{0.5\textwidth}
-        \centering
-        \includegraphics[width=200]{Assets/Logo (Dark).png}
-        \caption{Sponsor 2}
-        \end{subfigure}
-\end{figure}
-
+\section*{Credits}
+\begin{itemize}
+    \item Binara Wasala
+    \begin{itemize}
+        \item 'Required Software' section
+        \item 'Additional Considerations for the ESP32' section
+        \item 'Overview of the Arduino and ESP32' section
+        \item 'Lesson 1: Blinking an LED' section
+        \item 'Lesson 2: LED with a button' section
+        \item 'Lesson 3: Dimming and LED' section
+        \item 'Lesson 4: Ultrasonic Sensor' section
+    \end{itemize}
+\end{itemize}
 \end{document}
